@@ -1,0 +1,32 @@
+/* CSS Document */
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 223, 136);
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 16px;
+    margin: 16px;
+}
+
+nav ul li a.current {
+    background-color: pink;
+}
+
+@media screen and (min-width: 769px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+
