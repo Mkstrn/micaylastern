@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>WRA410 DOM Scavenger Hunt</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<!--
+
+Save this document to your computer and open it in Visual Studio Code
+
+Using JavaScript, select elements from the document as specified and style them accordingly
+
+-->
+
+<h1>Make this say "DOM Scavenger Hunt"</h1>
+
+
+<p class="green-text">Make this text green. Also, make ALL the paragraph
+elements have a border or background color of some sort.</p>
+
+
+<ul class="cymk">
+	<li>give me a cyan background</li>
+	<li>give me a magenta background</li>
+	<li>give me a yellow background</li>
+	<li>give me a black background, but with white text</li>
+</ul>
+
+
+<h2>This Element Should Be Showing </h2>
+
+<h2>This Element Should Not</h2>
+
+
+<div class="bats">
+	<img src="bats.jpg" alt="Release The Bats!">
+	<p>Make us look like we're standing instead of hanging...</p>
+</div>
+
+
+<p>This is another paragraph that is here for formatting purposes.</p>
+
+<p>So is this.</p>
+
+
+<script>
+
+// this script block can go anywhere, but it's best
+// if it goes right at the end, before the close of
+// the body tag
+
+// get started by using document.querySelector() to pick elements
+
+// all your javascript code goes below:
+ 
+
+document.querySelector("h1").innerText = "DOM Scavenger Hunt";
+
+document.querySelectorAll("p").forEach(function(p) {
+    p.style.backgroundColor = "pink";
+    p.style.border = "2px solid purple"; 
+});
+
+document.querySelector(".green-text").style.color = "green";
+
+document.querySelector(".cymk li:nth-child(1)").style.backgroundColor = "cyan";
+document.querySelector(".cymk li:nth-child(2)").style.backgroundColor = "magenta";
+document.querySelector(".cymk li:nth-child(3)").style.backgroundColor = "yellow";
+document.querySelector(".cymk li:nth-child(4)").style.backgroundColor = "black";
+document.querySelector(".cymk li:nth-child(4)").style.color = "white";
+
+document.querySelector("h2:nth-of-type(2)").style.display = "none";
+
+document.querySelector(".bats img").style.transform = "rotate(180deg)";
+</script>
+
+
+</body>
+</html>
