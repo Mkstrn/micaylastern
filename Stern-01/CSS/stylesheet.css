@@ -62,9 +62,10 @@ nav ul li a.current {
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-    div {
-        flex-direction: row;
-        justify-content: flex-end;
+    nav ul li:last-child {
+        margin-left: auto;
+        padding-right: 20px;
+        flex-wrap: wrap;
     }
 }
 
