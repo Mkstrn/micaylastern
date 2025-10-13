@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>JavaScript Object Data</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<h1>JavaScript Object Data</h1>
+
+<div class="container"></div>
+
+
+<script>
+
+	
+// make your object
+const meObject = {
+    "firstName": "Micayla",
+    "lastName": "Stern",
+    "birthYear": "2005",
+    "aliveStatus" : true,
+}
+
+// get your values printed below //
+
+const containerDiv = document.querySelector('.container');
+
+containerDiv.innerHTML = `
+    <h1>Name: ${meObject.firstName} ${meObject.lastName}</h1>
+    <h2>Born in ${meObject.birthYear}</h2>
+    <ul> 
+        <li>Alive Status: ${meObject.aliveStatus}</li>
+        </ul>
+`;
+
+</script>
+
+
+</body>
+</html>
