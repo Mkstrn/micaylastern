@@ -90,15 +90,54 @@ nav ul li a.current {
 
 .clickcount {
 	border: 2px solid rgb(53, 53, 53);
-	background-color: rgb(179,161,132);
+	background-color: pink;
 	width: 150px;
-	border-radius: 20px;
 	text-align: center;
 	font-family: 'Epunda Slab', serif;
 	font-weight: 500;
 	padding: 10px;
 	margin: 10px;
 	transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
+.but {
+    display: flex;
+    align-items: center;
+    transition: border;
 
+}
+
+/* clock */
+
+    #clock {
+        font-size: 3em;
+        color: #333;
+        background: #ffffff;
+        display: inline-block;
+        padding: 1px 2px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100dvh;
+    }
+
+
+/* color picker */
+    label {
+      font-size: 1.2em;
+      margin-right: 10px;
+    }
+    input[type="color"] {
+      width: 100px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: row;
+    }

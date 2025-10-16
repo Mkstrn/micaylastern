@@ -24,12 +24,30 @@
             <li><input type="text" placeholder="Search.." class="search"></li>
         </ul>
     </nav>
-		<h1> Button Click Counter!:</h1>
-		<button class = "clickcount">Click Me</button>
 
-	</body>
+	<br>
+	
+	<br>
 
+	<h1> Button Click Counter!:</h1>
+	
+	<br>
+	
+	<div class="but flex">
+		<button  onclick="incrementCounter()" class = "clickcount">Click Me</button> 
+		<p >You have clicked the button <span id="count">0</span> times.</p>
+	</div>
+
+	<div class="flex">
+		<h3>Customize your Webpage!</h3>
+		<label for="bgColorPicker">Choose a background color:</label>
+ 		<input type="color" id="bgColorPicker">
+		</div>
+
+	<div id="clock">00:00:00</div>
 
 	<script src="js/script.js"></script>
+	
+	</body>
 
 </html>
