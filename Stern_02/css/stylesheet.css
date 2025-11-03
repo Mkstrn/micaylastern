@@ -137,7 +137,3 @@ nav ul li a.current {
       cursor: pointer;
     }
 
-    .flex {
-        display: flex;
-        justify-content: row;
-    }
