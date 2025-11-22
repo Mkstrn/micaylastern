@@ -2,14 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Goal Organizer</title>
+  <title>SWAPI Character Search</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Goal Organizer</h1>
-  <textarea id="goalInput" rows="4" cols="50" placeholder="Enter your goals here..."></textarea>
-  <button id="addGoalButton">Add Goal</button>
-  <div id="goalList"></div>
+  <h1>StarWars Character Info!</h1>
+  <input id="searchInput" type="text" placeholder="Enter character name...">
+  <button onclick="searchCharacter()"> Search </button>
+
+  <br>
+
+  <div id="result"></div>
+
+
 
   <script src="script.js"></script>
 </body>
