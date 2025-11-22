@@ -2,6 +2,7 @@
 async function searchCharacter() {
 
     const name = document.getElementById("searchInput").value.toLowerCase();
+    const result = document.getElementById("result");
 
     if (!name) {
         document.getElementById("result").innerHTML = "Please enter a name.";
@@ -22,10 +23,12 @@ async function searchCharacter() {
     const person = data.results[0];
 
 // Display character info
+    result.style.display = "block";
+    
     document.getElementById("result").innerHTML = `
         <h3>${person.name}</h3>
-              <p><strong>Height:</strong> ${person.height}</p>
-            <p><strong>Mass:</strong> ${person.mass}</p>
+              <p><strong>Height:</strong> ${person.height} cm </p>
+            <p><strong>Mass:</strong> ${person.mass} kg</p>
             <p><strong>Hair Color:</strong> ${person.hair_color}</p>
             <p><strong>Skin Color:</strong> ${person.skin_color}</p>
             <p><strong>Eye Color:</strong> ${person.eye_color}</p>
