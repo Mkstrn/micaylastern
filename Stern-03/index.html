@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>StarWars Character Info!</h1>
-  <input id="searchInput" type="text" placeholder="Enter character name...">
+  <input id="searchInput" type="text" onkeypress="if(event.key === 'Enter') searchCharacter()" placeholder="Enter character name...">
   <button onclick="searchCharacter()"> Search </button>
 
   <br>
