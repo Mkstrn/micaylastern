@@ -7,3 +7,5 @@ I used a youtube video to base a lot of my work off of, https://www.youtube.com/
 I attempted to make it so that the little character card had a few images such as movie posters and a character image however it turns out there just isn't an easy way to do that that I could find. SWAPI doesn't include images so I looked for a second api that did but it didn't work and then I tried using AI to help me get these images to work and it still wasn't helpful so I decided to leave them out. 
 
 As far as styling goes, I got the "starwars yellow" from a design page, I wanted to keep the styling kind of simple. I did use AI to animate the stars on the page which, in my opinion, brought the whole look together. 
+
+If I had more time I would have liked to make it so that if you typed in a "species" it would output all characters of that species.
